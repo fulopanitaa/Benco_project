@@ -1,0 +1,87 @@
+/* Slick carousel */
+
+.slick-container {
+	display: flex;
+	justify-content: center;
+}
+.slick-wrapper {
+  width: 100%;
+  position:relative;
+}
+
+.slick-slide{
+  text-align: center;
+}
+.slick-slide > div {
+  margin: 0 15px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -15px;
+}
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  cursor:pointer;
+  background-color: white;
+}
+.prev-arrow,.next-arrow{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.prev-arrow{
+  left: -40px;
+  border-left: 0 solid transparent;
+  border-right: 15px solid#717171;
+}
+.next-arrow{
+  right: -40px;
+  border-right: 0 solid transparent;
+  border-left: 15px solid #717171;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width:100%;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.overlay-content {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+
+.slide-item:hover .overlay {
+  z-index: 99999;
+  opacity: 1;
+}
+.overlayicon {
+  padding: 15px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 6px;
+  border-radius: 50%;
+  background:white;
+  color: #434343;
+}
+
+.overlayicon:hover {
+    background-color: #434343;
+    color:white;
+}
+
